@@ -26,13 +26,19 @@ const HeroSection = () => {
       </div>
 
       {/* LOGO TOPO ESQUERDO */}
-      <div className="absolute top-6 left-6 z-20">
-        <img
-          src={logo}
-          alt="JM Drums ABC"
-          className="w-[120px] sm:w-[140px] md:w-[160px] h-auto object-contain"
-        />
-      </div>
+<div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+  <div className="mb-6 flex justify-start">
+    <img
+      src={logo}
+      alt="JM Drums ABC"
+      className="w-[90px] sm:w-[110px] md:w-[130px] h-auto object-contain"
+    />
+  </div>
+
+  <p className="mb-6 inline-block rounded-full border border-foreground/10 bg-foreground/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground backdrop-blur-sm">
+    <MapPin className="mr-1.5 inline h-3 w-3" />
+    ABC Paulista
+  </p>
 
       {/* Conteúdo */}
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
